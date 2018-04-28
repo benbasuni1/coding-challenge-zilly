@@ -55,8 +55,6 @@ for (let i = 1; i <= 1000000; i++) {
   NegTestCase.push(intToBase2(i * -1));
 }
 
-console.log(TestCase);
-
 module.exports = {
   TestCaseRand,
   TestCase,

@@ -97,30 +97,10 @@ const getNegDecFromBit = str => {
 }
 
 const getBitFromDec = num => {
-
-  let result = '';
-
-  // While loop when string is not 0
-  while (num !== 0) {
-
-    // Set variable bit to either 0 or 1 depending on str value.
-    let bit = parseInt(num % -2);
-
-    // Keep dividing str by 2 until it reaches 0
-    // This ends the loop
-    num = parseInt(num / -2);
-
-    // If remainder is -1
-    if (bit === -1) {
-      bit = 1;
-      num++; // Need to increment num to balance out the -1
-    }
-
-    // Push the bit onto result
-    result += bit;
-  }
-
-  return result;
+  // Got a more efficient algorithm by researching negabinaries,
+  // https://en.wikipedia.org/wiki/Negative_base for reference
+  let Schroeppel2 = 0xAAAAAAAA;
+  return ( (num + Schroeppel2 ) ^ Schroeppel2 ).toString(2).split('').reverse().join('');
 }
 
 /* Testing edge cases */
@@ -151,7 +131,6 @@ for (let i = 1; i <= 1000000; i++) {
   if ((sequenceBits(negTestCase[i - 1]) === testCase[i - 1]) === false) console.log(i, 'is false');
   else console.log(i, sequenceBits(negTestCase[i - 1]), testCase[i - 1], testCase[i - 1].length, sequenceBits(negTestCase[i - 1]) === testCase[i - 1]);
 }
-
 
 /*
  * Next Steps:
