@@ -9,8 +9,8 @@
  */
 
 const specificCase = require('./testFunctions.js').specificTest;
-//const testCase     = require('./testFunctions.js').TestCase;
-//const negTestCase  = require('./testFunctions.js').NegTestCase;
+const testCase     = require('./testFunctions.js').TestCase;
+const negTestCase  = require('./testFunctions.js').NegTestCase;
 
 // Main Function (SequenceBits)
 const sequenceBits = str => {
@@ -87,7 +87,7 @@ console.log(specificCase, sequenceBits(specificCase));   // 4
  */
 //for (let i = 1; i <= 5000000; i++) {
   //if ((sequenceBits(negTestCase[i - 1]) === testCase[i - 1]) === false) console.log(i, 'is false');
-  //else console.log(i, sequenceBits(negTestCase[i - 1]), testCase[i - 1], testCase[i - 1].length, sequenceBits(negTestCase[i - 1]) === testCase[i - 1]);
+  //else console.log(i, sequenceBits(negTestCase[i - 1]), negTestCase[i - 1], testCase[i - 1].length, sequenceBits(negTestCase[i - 1]) === testCase[i - 1]);
 //}
 
 /* Testing Specific Length of M */
@@ -132,4 +132,13 @@ console.log(specificCase, sequenceBits(specificCase));   // 4
  * [ ] 100
  *
  * What I found out was that, even 11 bits was incorrect. Debugging now...
+ *
+ * Can't understand why 11 bits is incorrect..
+ *
+ * THOUGHTS 3
+ * ----------
+ * Now I am slowly testing by numbers. Currently on 10,000 - 10,010 which has 15 bits, which is correct. ??? But earlier 11 bits didn't work?
+ * I am continuing to investigate this further.
+ *
+ * Tested num 1 - 5,000,000 and it looks correct. Specifically tested 4,999,994 and equaled out correct.
  */
