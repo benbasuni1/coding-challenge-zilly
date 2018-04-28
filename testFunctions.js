@@ -50,15 +50,11 @@ const intToBase2 = num => {
   return result;
 }
 
-/*for (let i = 1; i <= 1000000; i++) {
-  TestCase.push(intToBase2(i));
-  NegTestCase.push(intToBase2(i * -1));
-}*/
-
-for (let i = 1000001; i <= 1000003; i++) {
+for (let i = 1; i <= 1000000; i++) {
   TestCase.push(intToBase2(i));
   NegTestCase.push(intToBase2(i * -1));
 }
+
 console.log(TestCase);
 
 module.exports = {
