@@ -156,9 +156,16 @@ for (let i = 1; i <= 1000000; i++) {
 /*
  * Next Steps:
  *
- * I need to be able to find a 'faster' algorithm for the data to handle integers longer than 21 digits.
- * Based on numbers from 0 to 1m, all records are provided true based on test on line 147 - 150
+ * I need to be able to find a 'faster' algorithm for the data to handle integers longer than 21 digits. (0 to 1m)
+ * Based on numbers from 0 to 1m, all records return true based on test on line 147 - 150
  * My lack of knowledge in bitwise operations is what is preventing me from finding a faster algorithm.
  * This is where I am at right now.
+ *
+ * I took the advice given, and re-read the description of the problem 3-4 times quite slowly, rewriting all of the B, M and N as representational values for
+ * clarification.
+ *
+ * Perhaps I am overlooking the 'SHORTEST SEQUENCE' part in the description.
+ *
+ * I created tests to make sure that negative integers and positive integers were both taken into account and those are verified.
+ * I also implemented more edge case functionality, but felt like I am just trying to solidify the 'salad' of the meal, rather than attack the 'meat' of it.
  */
-
