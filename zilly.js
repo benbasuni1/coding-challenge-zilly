@@ -99,7 +99,7 @@ console.log(specificCase, sequenceBits(specificCase));   // 4
  * -----------
  *
  * I need to be able to find a 'faster' algorithm for the data to handle integers longer than 21 digits. (0 to 1m)
- * Based on numbers from 0 to 1m, all records return true based on test on line 147 - 150
+ * Based on numbers from 0 to 1m, all records return true based on test on line 88-91
  * My lack of knowledge in bitwise operations is what is preventing me from finding a faster algorithm.
  * This is where I am at right now.
  *
@@ -114,10 +114,10 @@ console.log(specificCase, sequenceBits(specificCase));   // 4
  * THOUGHTS 2
  * ----------
  *
- * After doing some research on how to create a more efficient algorithm, I stumbled upon the Schroeppel algorithm which makes bits faster.
+ * After doing some research on how to create a more efficient algorithm, I stumbled upon the Schroeppel algorithm which makes my algo a bit faster.
  * Now my tests can handle digits of up to 3m+, whereas my traditional solution I only could handle integers of up to 1million records only.
  *
- * The only thing that would make my test complete and ready for submission is if I can just test a 10,000 bit integer.
+ * The only thing that would make my test complete and ready for submission is if I can just test a 100,000 bit integer.
  * But instead of jumping ahead and testing straight up for a 100,000 bit integer,
  * I'm going to slowly do it bit by bit, perhaps testing out 100 digits, then 500, then 1000... etc, etc.
  *
