@@ -17,7 +17,7 @@ const specific = bitLength => {
 
 specificTest = specific(11);
 
-// Testing all integers from 0 - 10,000,000
+// Testing all integers from 0 - 5,000,000
 const intToBase2 = num => {
   let Schroeppel2 = 0xAAAAAAAA;
   return ( (num + Schroeppel2) ^ Schroeppel2 ).toString(2).split('').reverse().join('');
