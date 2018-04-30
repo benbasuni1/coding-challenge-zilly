@@ -74,6 +74,21 @@ const sequenceBits = x => {
   return result;
 }
 
+/* TEST EDGE CASES */
+const hundredThousand1 = (str = '') => {
+  for (let i = 0; i < 100001; i++)
+    str += '1';
+
+  return str;
+}
+//console.log("sequenceBits('asdf')", sequenceBits('asdf'));
+//console.log("sequenceBits([])", sequenceBits([]));
+//console.log("sequenceBits({})", sequenceBits({}));
+//console.log("sequenceBits(2)", sequenceBits(2));
+//console.log("sequenceBits(hundredThousand1())", sequenceBits(hundredThousand1()));
+//console.log("sequenceBits()", sequenceBits());
+
+/* TEST RAND NUMBERS */
 //console.log(sequenceBits('0100')); // 1100
 // console.log(sequenceBits('0101')); // 1111
 // console.log(sequenceBits('111'));  // 1101
