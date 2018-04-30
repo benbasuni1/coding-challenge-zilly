@@ -38,9 +38,7 @@ In Javascript:
    expected worst-case space complexity is O(M), beyond input storage (not counting the storage required for input arguments).
 
    Addendum:
-   any programming language can be used, and this test should take no longer than an hour.
-   Examples:
-   given S = "10011" (which equals 9), the function should return "1101" (which equals -9), and
-   given S = "001" (which equals 4), the function should return "0011" (which equals -4).
- */
-
+   any programming language can be used, and this test should take no longer than an hour.  
+   Examples:  
+   S = **10011** (9), return **1101** (-9)  
+   S = **001** (4), return **0011** (-4).  

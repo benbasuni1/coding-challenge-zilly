@@ -15,7 +15,7 @@ const specific = bitLength => {
   return str;
 }
 
-specificTest = specific(11);
+specificTest = specific(100);
 
 // Testing all integers from 0 - 5,000,000
 const intToBase2 = num => {
